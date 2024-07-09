@@ -23,10 +23,12 @@ int main()
     fprintf(ptr, "%s", ", ");
     fprintf(ptr, "%d", salary1);
     fprintf(ptr, "%c", '\n');
-     fprintf(ptr, "%s", name2);
+    fprintf(ptr, "%s", name2);
     fprintf(ptr, "%s", ", ");
     fprintf(ptr, "%d", salary2);
     fprintf(ptr, "%c", '\n');
+
+    fclose(ptr);
 
     return 0;
 }

@@ -6,9 +6,16 @@ int main(){
     int* ptr;
     scanf("%d", &n);
     ptr = (int*) malloc(n * sizeof(int));
-    // int arr[n]; // Not allowed in c
+    if (ptr == NULL) {
+        printf("Memory allocation failed\n");
+        return 1; // Exit program if memory allocation fails
+    }
+    // int arr[n]; // Not allowed in C
     ptr[0] = 3;
-    ptr [1]= 6;
+    ptr[1] = 6;
     printf("%d", ptr[0]);
+
+    free(ptr); // Free allocated memory
+
     return 0;
 }

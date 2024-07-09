@@ -7,5 +7,8 @@ int main()
     // char c = fgetc(ptr); // used to read a character from file
     // printf("%c", c);
     fputc('c', ptr);
+
+    fclose(ptr); // Close the file to prevent resource leak
+    
     return 0;
 }

@@ -1,17 +1,25 @@
 #include <stdio.h>
-
+#include <stdlib.h> // for malloc and free
 
 int* sum(int a, int b){
-    int s = a+b;
-    int* ptr = &s;
-    printf("The sum is %d\n", s);
+    int* ptr = (int*)malloc(sizeof(int)); // Allocate memory for an int
+    if (ptr == NULL) {
+        printf("Memory allocation failed\n");
+        exit(1); // Exit program if memory allocation fails
+    }
+    *ptr = a + b;
+    printf("The sum is %d\n", *ptr);
     return ptr;
 }
 
 float* average(int a, int b){
-    float avg =  (a+b)/2.0;
-    float * ptr = &avg;
-    printf("The average is %f\n", avg);
+    float* ptr = (float*)malloc(sizeof(float)); // Allocate memory for a float
+    if (ptr == NULL) {
+        printf("Memory allocation failed\n");
+        exit(1); // Exit program if memory allocation fails
+    }
+    *ptr = (a + b) / 2.0;
+    printf("The average is %f\n", *ptr);
     return ptr;
 }
 
@@ -21,10 +29,14 @@ int main(){
     int* ptr1;
     float* ptr2;
 
-    ptr1 = sum(x,y);
-    ptr2 = average(x,y);
+    ptr1 = sum(x, y);
+    ptr2 = average(x, y);
 
-    printf("The address of sum is %u and of average is %u", ptr1, ptr2 );
+    printf("The address of sum is %p and of average is %p\n", (void*)ptr1, (void*)ptr2);
+
+    // Free allocated memory
+    free(ptr1);
+    free(ptr2);
 
     return 0;
 }

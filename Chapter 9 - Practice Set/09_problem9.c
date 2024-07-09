@@ -39,6 +39,9 @@ int compare(DT d1, DT d2)
     {
         return -1;
     }
+
+    // Default case, should not reach here if all cases above are covered
+    return 0;
 }
 
 int main()
