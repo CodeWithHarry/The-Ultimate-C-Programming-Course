@@ -72,7 +72,7 @@ Each chapter contains problem sets to test your understanding and to practice co
 
 ## Additional Resources
 
-- **[Download the Handbook](https://www.codewithharry.com/notes)**
+- **[Download the Handbook (Scroll to the bottom of the page and navigate to Handbooks section)](https://www.codewithharry.com/notes)**
 - **[Download the Handwritten Notes](https://www.codewithharry.com/notes)**
 - **[Download the Cheatsheet](https://www.codewithharry.com/blogpost/c-cheatsheet/)**
 - **[Watch the Course Video](https://www.youtube.com/watch?v=aZb0iu4uGwA)**
