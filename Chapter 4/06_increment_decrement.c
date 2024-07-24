@@ -15,7 +15,7 @@ int main(){
     printf("The value of i is %d\n", i); // 13
 
     // i++ prints i first and then increments i (Post increment Operator)
-    // ++i increments i first and then prints i (Post increment Operator)
+    // ++i increments i first and then prints i (Pre increment Operator)
 
 
     return 0;
