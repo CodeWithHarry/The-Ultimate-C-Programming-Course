@@ -15,7 +15,7 @@ void star(int a)
         printf("\n");
     }
 }
-// This loop runs from 0 to 2
+        // The loop runs from 0 to 2
         // if i = 0 ---> print 1 star 
         // if i = 1 ---> print 3 stars 
         // if i = 2 ---> print 5 stars 
