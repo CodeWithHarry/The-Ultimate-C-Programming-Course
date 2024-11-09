@@ -5,3 +5,4 @@ int main(){
     printf("The value of a is %f", a);
     return 0;
 }
+//The value of a is -1.625000
